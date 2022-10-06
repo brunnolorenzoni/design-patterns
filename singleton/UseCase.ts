@@ -1,6 +1,6 @@
 import { Singleton } from "./Singleton";
 
-export class Another {
+export class UseCase {
   public useSingleton() {
     console.log('Another class using Singleton.')
     const instance = Singleton.getInstance('Passing a value, but this value will not be use, because we\'ve already created an instance.')

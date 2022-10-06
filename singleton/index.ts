@@ -1,5 +1,5 @@
 import { Singleton } from "./Singleton";
-import { Another } from "./Another";
+import { UseCase } from "./UseCase";
 
 const s1 = Singleton.getInstance('Foo');
 const s2 = Singleton.getInstance('');
@@ -16,5 +16,5 @@ s2.someBusinessLogic();
 
 s2.space = 'xXx5454xXx'
 
-const another = new Another()
+const another = new UseCase()
 another.useSingleton()
