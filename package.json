@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "singleton": "ts-node singleton/index.ts",
+    "observer": "ts-node observer/index.ts",
     "adapter": "ts-node adapter/index.ts"
   },
   "repository": {
