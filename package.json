@@ -6,7 +6,8 @@
   "scripts": {
     "singleton": "ts-node singleton/index.ts",
     "observer": "ts-node observer/index.ts",
-    "adapter": "ts-node adapter/index.ts"
+    "adapter": "ts-node adapter/index.ts",
+    "builder": "ts-node builder/index.ts"
   },
   "repository": {
     "type": "git",
