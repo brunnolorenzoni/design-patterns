@@ -9,6 +9,7 @@
     "adapter": "ts-node adapter/index.ts",
     "prototype": "ts-node prototype/index.ts",
     "state": "ts-node state/index.ts",
+    "composite": "ts-node composite/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
