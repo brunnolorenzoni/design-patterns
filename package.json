@@ -13,6 +13,7 @@
     "composite": "ts-node composite/index.ts",
     "facade": "ts-node facade/index.ts",
     "proxy": "ts-node proxy/index.ts",
+    "decorator": "ts-node decorator/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
