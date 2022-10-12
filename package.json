@@ -12,6 +12,7 @@
     "mediator": "ts-node mediator/index.ts",
     "composite": "ts-node composite/index.ts",
     "facade": "ts-node facade/index.ts",
+    "proxy": "ts-node proxy/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
