@@ -14,6 +14,7 @@
     "facade": "ts-node facade/index.ts",
     "proxy": "ts-node proxy/index.ts",
     "decorator": "ts-node decorator/index.ts",
+    "chain": "ts-node chain-of-responsabilities/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
