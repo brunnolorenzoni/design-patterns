@@ -15,6 +15,7 @@
     "proxy": "ts-node proxy/index.ts",
     "decorator": "ts-node decorator/index.ts",
     "chain": "ts-node chain-of-responsabilities/index.ts",
+    "abstract-factory": "ts-node abstract-factory/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
