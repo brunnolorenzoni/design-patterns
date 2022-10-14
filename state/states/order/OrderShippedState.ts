@@ -9,14 +9,14 @@ export class OrderShippedState implements State {
   }
 
   cancelOrder() {
-    console.log('You cannot cancel an order that has been shipped.');
+    console.log("You cannot cancel an order that has been shipped.");
   }
 
   verifyPayment() {
-    console.log('Payment is already verified');
+    console.log("Payment is already verified");
   }
-  
+
   shipOrder() {
-    console.log('Order is already shipped');
+    console.log("Order is already shipped");
   }
 }

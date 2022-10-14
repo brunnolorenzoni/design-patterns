@@ -1,8 +1,8 @@
 import { State } from "../states/order/State";
-import { CancelledOrderState } from '../states/order/CancelledOrderState'
-import { PaymentPendingState } from '../states/order/PaymentPendingState'
-import { OrderShippedState } from '../states/order/OrderShippedState'
-import { OrderBeingPrepared } from '../states/order/OrderBeingPrepared'
+import { CancelledOrderState } from "../states/order/CancelledOrderState";
+import { PaymentPendingState } from "../states/order/PaymentPendingState";
+import { OrderShippedState } from "../states/order/OrderShippedState";
+import { OrderBeingPrepared } from "../states/order/OrderBeingPrepared";
 
 export class Order {
   public cancelledOrderState: State;

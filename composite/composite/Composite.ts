@@ -3,7 +3,7 @@ import { Component } from "../component/Component";
 export abstract class Composite implements Component {
   protected childs: Component[] = [];
   operation() {
-    this.childs.forEach(child => {
+    this.childs.forEach((child) => {
       child.operation();
     });
   }

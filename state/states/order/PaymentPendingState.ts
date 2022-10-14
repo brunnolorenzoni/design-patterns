@@ -9,16 +9,16 @@ export class PaymentPendingState implements State {
   }
 
   cancelOrder() {
-    console.log('Cancelling your unpaid order...');
+    console.log("Cancelling your unpaid order...");
     this.order.setState(this.order.cancelledOrderState);
   }
 
   verifyPayment() {
-    console.log('Payment verified! Shipping soon.');
+    console.log("Payment verified! Shipping soon.");
     this.order.setState(this.order.orderBeingPrepared);
   }
-  
+
   shipOrder() {
-    console.log('Cannot ship order when payment is pending!');
+    console.log("Cannot ship order when payment is pending!");
   }
 }

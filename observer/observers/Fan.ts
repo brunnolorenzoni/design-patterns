@@ -1,11 +1,10 @@
 import { Observer } from "./Observer";
 import { Subject } from "../subjects/Subject";
 
-
 export class Fan implements Observer {
   protected temperatureSubject: Subject;
   protected running: boolean = false;
-  
+
   constructor(temperatureSubject: Subject) {
     this.temperatureSubject = temperatureSubject;
     this.temperatureSubject.registerObserver(this);
@@ -20,17 +19,17 @@ export class Fan implements Observer {
     return this.turnOn();
   }
 
-  protected turnOn () {
+  protected turnOn() {
     if (!this.running) {
       this.running = true;
-      console.info('Fan started');
+      console.info("Fan started");
     }
   }
-  
-  protected turnOff () {
+
+  protected turnOff() {
     if (this.running) {
       this.running = false;
-      console.info('Fan stoped');
+      console.info("Fan stoped");
     }
   }
 }

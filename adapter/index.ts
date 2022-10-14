@@ -5,9 +5,9 @@ import { NotificationService } from "./service/NotificationService";
 
 const fileLogger = new FileLogger();
 const notificationServiceFile = new NotificationService(fileLogger);
-notificationServiceFile.send('My notification FILE');
+notificationServiceFile.send("My notification FILE");
 
 const awsLogger = new AwsLogger();
 const adapterLogger = new AdapterLogger(awsLogger);
 const notificationServiceAws = new NotificationService(adapterLogger);
-notificationServiceAws.send('My notification AWS');
+notificationServiceAws.send("My notification AWS");

@@ -2,7 +2,6 @@ import House from "../domain/house";
 import HouseBuilder from "../builders/HouseBuilder";
 
 export default class IglooDirector {
-  
   static oneDoor(): House {
     return new HouseBuilder()
       .setBuildingType("Igloo")

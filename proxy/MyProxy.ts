@@ -16,7 +16,9 @@ export class MyProxy implements Subject {
   }
 
   private checkAccess(): boolean {
-    console.log("Proxy: Checking access prior to firing a real request.", { user: true });
+    console.log("Proxy: Checking access prior to firing a real request.", {
+      user: true,
+    });
     return true;
   }
 

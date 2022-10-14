@@ -1,8 +1,7 @@
 import { Observer } from "../observers/Observer";
 import { Subject } from "./Subject";
 
-
-export class TemperatureSensor implements Subject  {
+export class TemperatureSensor implements Subject {
   protected temperature: Number = 0;
   protected observers: Observer[] = [];
 
@@ -15,11 +14,13 @@ export class TemperatureSensor implements Subject  {
   }
 
   public unregisterObserver(observer: Observer): void {
-    this.observers = this.observers.filter(o => o !== observer )
+    this.observers = this.observers.filter((o) => o !== observer);
   }
 
   public notifyObservers(): void {
-    this.observers.forEach((observer) => observer.notify(this.getTemperature()));
+    this.observers.forEach((observer) =>
+      observer.notify(this.getTemperature())
+    );
   }
 
   public getTemperature(): Number {
@@ -31,7 +32,7 @@ export class TemperatureSensor implements Subject  {
     console.info(`New Temperature: ${randomTemperature}`);
     this.setTemperature(Math.floor(randomTemperature));
   }
-  
+
   protected setTemperature(temperature: Number) {
     this.temperature = temperature;
     this.notifyObservers();

@@ -1,8 +1,7 @@
-import { Duck } from './composite/Duck';
-import { DuckFly } from './composite/DuckFly';
-import { DuckVoice } from './leaf/DuckVoice';
-import { Wing } from './leaf/Wing';
-
+import { Duck } from "./composite/Duck";
+import { DuckFly } from "./composite/DuckFly";
+import { DuckVoice } from "./leaf/DuckVoice";
+import { Wing } from "./leaf/Wing";
 
 const wings = [new Wing(), new Wing()];
 const flyAbility = new DuckFly().add(wings[0]).add(wings[1]);

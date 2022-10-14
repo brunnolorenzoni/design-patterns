@@ -9,15 +9,15 @@ export class CancelledOrderState implements State {
   }
 
   public cancelOrder() {
-    console.log('This order is already cancelled');
+    console.log("This order is already cancelled");
     this.order.setState(this.order.cancelledOrderState);
   }
 
   public verifyPayment() {
-    console.log('The order is cancelled, you cannot pay anymore.');
+    console.log("The order is cancelled, you cannot pay anymore.");
   }
 
   public shipOrder() {
-    console.log('The order is cancelled, you cannot ship it anymore.');
+    console.log("The order is cancelled, you cannot ship it anymore.");
   }
 }
