@@ -17,6 +17,7 @@
     "chain": "ts-node chain-of-responsabilities/index.ts",
     "abstract-factory": "ts-node abstract-factory/index.ts",
     "factory": "ts-node factory/index.ts",
+    "flyweight": "ts-node flyweight/index.ts",
     "builder": "ts-node builder/index.ts"
   },
   "repository": {
